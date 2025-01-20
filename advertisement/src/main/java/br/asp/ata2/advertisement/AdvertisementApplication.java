@@ -20,7 +20,7 @@ public class AdvertisementApplication {
 
 	@KafkaListener(topics = "advertisementTopic")
 	public void handlePlay(PlayedEventDTO playedEventDTO) {
-		log.info("Advertisement solicitaion received: {}", playedEventDTO.getId(), playedEventDTO.getPlayedAt());
+		log.info("Advertisement solicitation received: {}", playedEventDTO.getId(), playedEventDTO.getPlayedAt());
 		// kafkaTemplate.send("playTopic", playedEventDTO.getId());
 	}
 }

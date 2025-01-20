@@ -22,6 +22,7 @@ public class PlayService {
         Play play = new Play();
 
         play.setPlayed_at(playDTO.getPlayed_at());
+        play.setVideo(playDTO.getVideo());
 
         playRepository.save(play);
 

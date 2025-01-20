@@ -11,5 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PlayDTO {
     private Long id;
+    private String video;
     private Date played_at;
 }

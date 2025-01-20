@@ -2,7 +2,8 @@
 
 \c play_db;
 
-CREATE TABLE "Play" (
+CREATE TABLE play (
     id SERIAL PRIMARY KEY,
+    video VARCHAR(255) NOT NULL,
     played_at TIMESTAMP NOT NULL
 );

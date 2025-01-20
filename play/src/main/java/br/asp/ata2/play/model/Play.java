@@ -18,5 +18,6 @@ public class Play {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String video;
     private Date played_at;   
 }
